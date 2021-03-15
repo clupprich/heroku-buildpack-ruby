@@ -31,7 +31,7 @@ class LanguagePack::Railsfile < LanguagePack::Ruby
 
   def compile
     instrument "railsfile.compile" do
-      # no-op
+      write_release_toml
     end
   end
 end
