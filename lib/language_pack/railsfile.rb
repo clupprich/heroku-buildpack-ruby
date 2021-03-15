@@ -23,6 +23,11 @@ class LanguagePack::Railsfile < LanguagePack::Ruby
     end
   end
 
+  def default_addons
+    instrument "railsfile.default_addons" do
+    end
+  end
+
   def default_process_types
     {
       "web" => "ruby app.rb"
