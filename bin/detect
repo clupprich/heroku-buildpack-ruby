@@ -11,7 +11,7 @@ else
   APP_DIR=$(pwd)
 fi
 
-if [ -f "$APP_DIR/app.rb" ]; then
+if [ -f "$APP_DIR/Gemfile" -o -f "$APP_DIR/app.rb" ]; then
   echo "Ruby"
   exit 0
 else
